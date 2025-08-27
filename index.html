@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>By Poppy</title>
+  <!-- Fonte Brown Sugar -->
+  <link href="https://fonts.googleapis.com/css2?family=Brown+Sugar&display=swap" rel="stylesheet">
+  <!-- Font Awesome para ícones -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --peach: #FADCD9;
+      --turquoise: #40E0D0;
+      --text-color: #333;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: var(--peach);
+      color: var(--text-color);
+    }
+    a { text-decoration: none; color: inherit; }
+    /* Cabeçalho */
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 20px;
+    }
+    header h1 {
+      font-family: 'Brown Sugar', cursive;
+      font-size: 2.5rem;
+      color: var(--text-color);
+    }
+    .header-icons {
+      position: absolute;
+      right: 20px;
+      display: flex;
+      gap: 15px;
+      font-size: 1.5rem;
+    }
+    /* Hero */
+    .hero {
+      background-color: var(--peach);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60vh;
+      margin-bottom: 50px;
+      position: relative;
+    }
+    .hero img {
+      max-width: 80%;
+      max-height: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+    /* Seção Modelos */
+    .models {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .models h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .model-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 0 20px;
+    }
+    .model-card {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .model-card:hover {
+      transform: translateY(-5px);
+    }
+    .model-card img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+    .model-name {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .order-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: var(--turquoise);
+      color: white;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .order-btn:hover {
+      background-color: #36cfc9;
+    }
+    /* Rodapé */
+    footer {
+      background-color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      border-top: 1px solid #ccc;
+    }
+    .social-icons {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 1.5rem;
+      color: var(--text-color);
+    }
+    .social-icons a:hover {
+      color: var(--turquoise);
+    }
+    @media(max-width:600px){
+      header h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>By Poppy</h1>
+    <div class="header-icons">
+      <i class="fas fa-bars"></i>
+      <i class="fas fa-shopping-bag"></i>
+    </div>
+  </header>
+
+  <!-- Banner inicial -->
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1593030668930-8130f8a1f300?q=80&w=1200&auto=format&fit=crop" alt="Bolsas artesanais">
+  </section>
+
+  <!-- Seção Modelos -->
+  <section class="models">
+    <h2>MODELOS</h2>
+    <div class="model-grid">
+      <!-- Bolsa Ori -->
+      <div class="model-card">
+        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=800&auto=format&fit=crop" alt="Bolsa Ori">
+        <div class="model-name">Bolsa Ori</div>
+        <a class="order-btn" href="https://wa.me/55SEUNUMERO?text=Olá,+quero+encomendar+uma+bolsa+By+Poppy" target="_blank">Encomendar pelo WhatsApp</a>
+      </div>
+      <!-- Bolsa Dahlí -->
+      <div class="model-card">
+        <img src="https://images.unsplash.com/photo-1520975693410-001d24d3d2d0?q=80&w=800&auto=format&fit=crop" alt="Bolsa Dahlí">
+        <div class="model-name">Bolsa Dahlí</div>
+        <a class="order-btn" href="https://wa.me/55SEUNUMERO?text=Olá,+quero+encomendar+uma+bolsa+By+Poppy" target="_blank">Encomendar pelo WhatsApp</a>
+      </div>
+      <!-- Bolsa Irys -->
+      <div class="model-card">
+        <img src="https://images.unsplash.com/photo-1593030668930-8130f8a1f300?q=80&w=800&auto=format&fit=crop" alt="Bolsa Irys">
+        <div class="model-name">Bolsa Irys</div>
+        <a class="order-btn" href="https://wa.me/55SEUNUMERO?text=Olá,+quero+encomendar+uma+bolsa+By+Poppy" target="_blank">Encomendar pelo WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div>By Poppy</div>
+    <div class="social-icons">
+      <a href="https://wa.me/55SEUNUMERO" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
